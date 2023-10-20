@@ -1,9 +1,10 @@
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
-import { useTheme } from '../theme-provider';
-
+import {  useTheme } from '../theme-provider';
+import { cn } from '../../../@/lib/utils';
 
 const LeftCharts = () => {
      const {theme} = useTheme();
+     
     const data = [
         {
           name: 'Page A',
@@ -71,8 +72,8 @@ const LeftCharts = () => {
           <YAxis dataKey="name" type="category" />
           <Tooltip />
           <Legend />
-          <Line dataKey="pv" stroke={theme === 'light' ? 'purple' : 'blue'}/>
-          <Line dataKey="uv" stroke={theme === 'light' ? 'orange' : 'yellow'} />
+          <Line dataKey="pv" stroke="hsl(var(--destructive))"/>
+          <Line dataKey="uv" stroke="hsl(var(--primary))" />
         </LineChart>
     </div>
         
