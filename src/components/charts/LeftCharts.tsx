@@ -1,9 +1,6 @@
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
-import {  useTheme } from '../theme-provider';
-import { cn } from '../../../@/lib/utils';
 
 const LeftCharts = () => {
-     const {theme} = useTheme();
      
     const data = [
         {

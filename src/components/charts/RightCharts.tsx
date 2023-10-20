@@ -10,11 +10,9 @@ import {
   Legend,
   Scatter,
 } from 'recharts';
-import { useTheme } from '../theme-provider';
-import { cn } from '../../../@/lib/utils';
+
 
 const RightCharts = () => {
-  const {theme} = useTheme();
     const data = [
         {
           name: 'Page A',
