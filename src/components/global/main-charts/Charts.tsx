@@ -1,4 +1,3 @@
-import React from 'react'
 import LeftCharts from '../../charts/LeftCharts'
 import RightCharts from '../../charts/RightCharts'
 
