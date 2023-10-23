@@ -2,60 +2,109 @@
 @tailwind components;
 @tailwind utilities;
  
-
+/* neutral color */
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 221.2 83.2% 53.3%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 221.2 83.2% 53.3%;
-    --radius: 0.5rem;
+    --background-neutral: 0 0% 100%;
+    --foreground-neutral: 240 10% 3.9%;
+    --primary-neutral: 240 5.9% 10%;
+    --primary-foreground-neutral: 0 0% 98%;
+    --secondary-neutral: 240 4.8% 95.9%;
+    --secondary-foreground-neutral: 240 5.9% 10%;
+    --destructive-neutral: 0 84.2% 60.2%;
+    --destructive-foreground-neutral: 0 0% 98%;
+    --ring-neutral: 240 5.9% 10%;
   }
  
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 217.2 91.2% 59.8%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 224.3 76.3% 48%;
+    --background: 0 0% 100%;
+    --background-neutral: 0 0% 100%;
+    --foreground-neutral: 240 10% 3.9%;
+    --primary-neutral: 240 5.9% 10%;
+    --primary-foreground-neutral: 0 0% 98%;
+    --secondary-neutral: 240 4.8% 95.9%;
+    --secondary-foreground-neutral: 240 5.9% 10%;
+    --destructive-neutral: 0 84.2% 60.2%;
+    --destructive-foreground-neutral: 0 0% 98%;
+    --ring-neutral: 240 5.9% 10%;
   }
+  /* neutral color */
+  :root {
+    --background-blue: 0 0% 100%;
+    --foreground-blue: 222.2 84% 4.9%;
+    --primary-blue: 221.2 83.2% 53.3%;
+    --primary-foreground-blue: 210 40% 98%;
+    --secondary-blue: 210 40% 96.1%;
+    --secondary-foreground-blue: 222.2 47.4% 11.2%;
+    --destructive-blue: 0 84.2% 60.2%;
+    --destructive-foreground-blue: 210 40% 98%;
+    --ring-blue: 221.2 83.2% 53.3%;
+  }
+  
+  .dark {
+    --background-blue: 222.2 84% 4.9%;
+    --foreground-blue: 210 40% 98%;
+    --primary-blue: 217.2 91.2% 59.8%;
+    --primary-foreground-blue: 222.2 47.4% 11.2%;
+    --secondary-blue: 217.2 32.6% 17.5%;
+    --secondary-foreground-blue: 210 40% 98%;
+    --destructive-blue: 0 62.8% 30.6%;
+    --destructive-foreground-blue: 210 40% 98%;
+    --ring-blue: 224.3 76.3% 48%;
+  }
+  
+  :root {
+    --background: 0 0% 100%;
+    --background-pink: 0 0% 100%;
+    --foreground-pink: 240 10% 3.9%;
+    --primary-pink: 346.8 77.2% 49.8%;
+    --primary-foreground-pink: 355.7 100% 97.3%;
+    --secondary-pink: 240 4.8% 95.9%;
+    --secondary-foreground-pink: 240 5.9% 10%;
+    --destructive-pink: 0 84.2% 60.2%;
+    --destructive-foreground-pink: 0 0% 98%;
+    --ring-pink: 346.8 77.2% 49.8%;
+  }
+ 
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --background-pink: 20 14.3% 4.1%;
+    --foreground-pink: 0 0% 95%;
+    --primary-pink: 346.8 77.2% 49.8%;
+    --primary-foreground-pink: 355.7 100% 97.3%;
+    --secondary-pink: 240 3.7% 15.9%;
+    --secondary-foreground-pink: 0 0% 98%;
+    --destructive-pink: 0 62.8% 30.6%;
+    --destructive-foreground-pink: 0 85.7% 97.3%;
+    --ring-pink: 346.8 77.2% 49.8%;
+  }
+  
+  :root {
+    --background-yellow: 0 0% 100%;
+    --foreground-yellow: 20 14.3% 4.1%;
+    --primary-yellow: 47.9 95.8% 53.1%;
+    --primary-foreground-yellow: 26 83.3% 14.1%;
+    --secondary-yellow: 60 4.8% 95.9%;
+    --secondary-foreground-yellow: 24 9.8% 10%;
+    --destructive-yellow: 0 84.2% 60.2%;
+    --destructive-foreground-yellow: 60 9.1% 97.8%;
+    --ring-yellow: 20 14.3% 4.1%;
+  }
+ 
+  .dark {
+    --background-yellow: 20 14.3% 4.1%;
+    --foreground-yellow: 60 9.1% 97.8%;
+    --primary-yellow: 47.9 95.8% 53.1%;
+    --primary-foreground-yellow: 26 83.3% 14.1%;
+    --secondary-yellow: 12 6.5% 15.1%;
+    --secondary-foreground-yellow: 60 9.1% 97.8%;
+    --destructive-yellow: 0 62.8% 30.6%;
+    --destructive-foreground-yellow: 60 9.1% 97.8%;
+    --ring-yellow: 35.5 91.7% 32.9%;
+  }
+
 }
 
- 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
+
+

@@ -11,8 +11,9 @@ import {
   Scatter,
 } from 'recharts';
 
-
+import { useTheme } from '../../themeContext';
 const RightCharts = () => {
+  const {theme} = useTheme()
     const data = [
         {
           name: 'Page A',
@@ -70,15 +71,15 @@ const RightCharts = () => {
             left: 20,
           }}
         >
-          <CartesianGrid stroke='hsl(var(--primary))' />
+          <CartesianGrid stroke={theme.backgroundColor}/>
           <XAxis dataKey="name" scale="band" />
           <YAxis />
           <Tooltip />
           <Legend />
-          <Area type="monotone" dataKey="amt" fill="hsl(var(--destructive))" stroke="hsl(var(--muted-foreground))" />
-          <Bar dataKey="pv" barSize={20} fill='hsl(var(--primary))'stroke='"hsl(var(--secondary))"' />
-          <Line type="monotone" dataKey="uv" stroke="hsl(var(--accent-foreground))"/>
-          <Scatter dataKey="cnt" fill="hsl(var(--ring))"/>
+          <Area type="monotone" dataKey="amt" fill={theme.primaryColor} stroke={theme.secondaryColor} />
+          <Bar dataKey="pv" barSize={20} fill={theme.primaryColor}stroke={theme.backgroundColor} />
+          <Line type="monotone" dataKey="uv" stroke={theme.ring}/>
+          <Scatter dataKey="cnt" fill={theme.destructive}/>
         </ComposedChart> 
     </div>
 

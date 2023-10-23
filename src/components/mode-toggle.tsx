@@ -4,10 +4,11 @@ import { DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuTrigger, } from "@radix-ui/react-dropdown-menu"
-import { useTheme } from "./theme-provider"
+import { useTheme } from "../themeContext"
 
 export function ModeToggle() {
-  const { setTheme } = useTheme()
+  const { changeTheme } = useTheme()
+  const {theme} = useTheme()
 
   return (
     <div className="mt-5 mr-12">
@@ -20,14 +21,17 @@ export function ModeToggle() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" >
-        <DropdownMenuItem onClick={() => setTheme("light")} className="text-primary hover:cursor-pointer" >
-          Light
+        <DropdownMenuItem onClick={() => changeTheme(1)} className="hover:cursor-pointer" style={{color:theme.ring}}>
+          Neutral
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")} className="text-primary hover:cursor-pointer">
-          Dark
+        <DropdownMenuItem onClick={() => changeTheme(2)} className="hover:cursor-pointer"style={{color:theme.ring}}>
+          Blue
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")} className="text-primary hover:cursor-pointer">
-          System
+        <DropdownMenuItem onClick={() => changeTheme(3)} className="hover:cursor-pointer"style={{color:theme.ring}}>
+          Pink
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => changeTheme(4)} className="hover:cursor-pointer" style={{color:theme.ring}}>
+          Yellow
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

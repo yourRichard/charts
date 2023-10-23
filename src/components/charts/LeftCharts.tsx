@@ -1,7 +1,8 @@
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+import { useTheme } from '../../themeContext';
 
 const LeftCharts = () => {
-     
+     const {theme} = useTheme();
     const data = [
         {
           name: 'Page A',
@@ -49,8 +50,8 @@ const LeftCharts = () => {
   return (
     <div className='mt-10 w-[350px] h-[300px] border border-border ml-10 rounded-2xl'>
       <div className='ml-4 mt-2 '>
-        <h3 className='text-ring text-2xl font-bold'>UV/PV Charts</h3>
-        <p className='text-primary'>The heat and the traffic have been rapidly increasing last year</p>
+        <h3 className={` text-2xl font-bold`} style={{color:theme.ring}}>UV/PV Charts</h3>
+        <p className='text-sm' style={{color:theme.primaryColor}}>The heat and the traffic have been rapidly increasing last year</p>
       </div>
       <LineChart
           layout="vertical"
@@ -69,8 +70,8 @@ const LeftCharts = () => {
           <YAxis dataKey="name" type="category" />
           <Tooltip />
           <Legend />
-          <Line dataKey="pv" stroke="hsl(var(--destructive))"/>
-          <Line dataKey="uv" stroke="hsl(var(--primary))" />
+          <Line dataKey="pv" stroke={theme.primaryColor}/>
+          <Line dataKey="uv" stroke={theme.ring} />
         </LineChart>
     </div>
         
