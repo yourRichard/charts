@@ -71,7 +71,7 @@ const LeftCharts = () => {
           <Tooltip />
           <Legend />
           <Line dataKey="pv" stroke={theme.primaryColor}/>
-          <Line dataKey="uv" stroke={theme.ring} />
+          <Line dataKey="uv" stroke={theme.primaryColor} />
         </LineChart>
     </div>
         

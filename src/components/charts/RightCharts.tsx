@@ -76,10 +76,10 @@ const RightCharts = () => {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Area type="monotone" dataKey="amt" fill={theme.primaryColor} stroke={theme.secondaryColor} />
+          <Area type="monotone" dataKey="amt" fill="gray" stroke={theme.primaryColor} />
           <Bar dataKey="pv" barSize={20} fill={theme.primaryColor}stroke={theme.backgroundColor} />
           <Line type="monotone" dataKey="uv" stroke={theme.ring}/>
-          <Scatter dataKey="cnt" fill={theme.destructive}/>
+          <Scatter dataKey="cnt" fill={theme.backgroundColor}/>
         </ComposedChart> 
     </div>
 
