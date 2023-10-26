@@ -50,8 +50,8 @@ const LeftCharts = () => {
   return (
     <div className='mt-10 w-[350px] h-[300px] border border-border ml-10 rounded-2xl'>
       <div className='ml-4 mt-2 '>
-        <h3 className={` text-2xl font-bold`} style={{color:theme.ring}}>UV/PV Charts</h3>
-        <p className='text-sm' style={{color:theme.primaryColor}}>The heat and the traffic have been rapidly increasing last year</p>
+        <h3 className="font-bold text-slate-300 text-2xl" >UV/PV Charts</h3>
+        <p className='text-sm text-slate-800'>The heat and the traffic have been rapidly increasing last year</p>
       </div>
       <LineChart
           layout="vertical"

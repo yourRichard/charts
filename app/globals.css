@@ -40,6 +40,10 @@
     --destructive-blue: 0 84.2% 60.2%;
     --destructive-foreground-blue: 210 40% 98%;
     --ring-blue: 221.2 83.2% 53.3%;
+    --card-blue: 0 0% 100%;
+    --card-foreground-blue: 222.2 84% 4.9%;
+    --popover-blue: 0 0% 100%;
+    --popover-foreground-card-blue: 222.2 84% 4.9%;
   }
   
   .dark {

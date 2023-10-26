@@ -7,6 +7,7 @@ type Theme = {
   destructive:string;
   foregroundColor:string;
   secondaryColor:string;
+  popoverColor :string;
 
   // Add more properties for other styles
 };
@@ -18,7 +19,8 @@ const theme1: Theme = {
   destructive: 'hsl(var(--destrustive-neutral))',
   secondaryColor:'hsl(var(--secondary-neutral))',
   foregroundColor:'hsl(var(--foreground-neutral))',
-  primaryForground:'hsl(var(--primary-foreground-neutral))'
+  primaryForground:'hsl(var(--primary-foreground-neutral))',
+  popoverColor:'hsl(var(--card-neutral))'
   // ... other styles
 };
 
@@ -29,7 +31,9 @@ const theme2: Theme = {
   destructive: 'hsl(var(--destrustive-blue))',
   secondaryColor:'hsl(var(--secondary-blue))',
   foregroundColor:'hsl(var(--foreground-blue))',
-  primaryForground:'hsl(var(--primary-foreground-blue))'
+  primaryForground:'hsl(var(--primary-foreground-blue))',
+  popoverColor:'hsl(var(--card-blue))'
+
   // ... other styles
 };
 
@@ -40,7 +44,9 @@ const theme3: Theme = {
   destructive: 'hsl(var(--destrustive-pink))',
   secondaryColor:'hsl(var(--secondary-pink))',
   foregroundColor:'hsl(var(--foreground-pink))',
-  primaryForground:'hsl(var(--primary-foreground-pink))'
+  primaryForground:'hsl(var(--primary-foreground-pink))',
+  popoverColor:'hsl(var(--card-neutral))'
+
   // ... other styles
 };
 
@@ -51,7 +57,9 @@ const theme4: Theme = {
   destructive: 'hsl(var(--destrustive-yellow))',
   secondaryColor:'hsl(var(--secondary-yellow))',
   foregroundColor:'hsl(var(--foreground-yellow))',
-  primaryForground:'hsl(var(--primary-foreground-yellow))'
+  primaryForground:'hsl(var(--primary-foreground-yellow))',
+  popoverColor:'hsl(var(--card-neutral))'
+
   // ... other styles
 };
 

@@ -35,7 +35,12 @@ module.exports = {
         destructive: {
           DEFAULT: "hsl(var(--destructive-neutral))",
           foreground: "hsl(var(--destructive-foreground-neutral))",
-
+        popover:{
+          DEFAULT:"hsl(var(--popover-neutral))"
+        },
+        card:{
+          DEFAULT:"hsl(var(--card-neutral))"
+        },
 
           ring: "hsl(var(--ring-blue))",
         background: "hsl(var(--background-blue))",
@@ -51,6 +56,12 @@ module.exports = {
         destructive: {
           DEFAULT: "hsl(var(--destructive-blue))",
           foreground: "hsl(var(--destructive-foreground-blue))",
+        },
+        popover:{
+          DEFAULT:"hsl(var(--popover-blue))"
+        },
+        card:{
+          DEFAULT:"hsl(var(--card-blue))"
         },
                         
         // neutral color
